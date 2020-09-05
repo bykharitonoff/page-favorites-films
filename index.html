@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Favorites films</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="menu">
+            <ul class="menu-accordeon" id="menu-accordeon">
+                <li class="menu-accordeon__item">
+                    <div class="menu-accordeon__title red-line-for-title"></span>Действия
+                        <div class="arrow"></div>
+                    </div>
+                    <ul class="sub-menu">
+                    <li><a class="menu__item tablinks"  onclick="openTabMenu(event, 'views')" href="#">Просмотры</a></li>
+                    <li><a class="menu__item tablinks" onclick="openTabMenu(event, 'favorites')" id="defaultOpen" href="#">Избранное</a></li>
+                    <li><a class="menu__item tablinks" onclick="openTabMenu(event, 'postponed')" href="#">Отложенное</a></li>
+                    </ul>
+                </li>
+                <li class="menu-accordeon__item">
+                    <div class="menu-accordeon__title">Избранное
+                        <div class="arrow"></div>
+                    </div>
+                    <ul class="sub-menu">
+                        <li class="sub">Пункт меню</li>
+                    </ul>
+                </li>
+                <li class="menu-accordeon__item">
+                    <div class="menu-accordeon__title">Отложенное
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    
+    <section class="content">
+        <div id="views" class="tabcontent">
+            <h3>Просмотры</h3>
+            <p>Тест</p>
+        </div>
+
+        <div id="favorites" class="tabcontent">
+            <h3>Избранное</h3>
+            <div class="all-films">
+                <div class="film">
+                    <div class="film-img poster1">
+                        <div class="film-img--hover">
+                            <div class="film-img--hover--btn-up">
+                                <button class="favorites-icon">
+                                    <div class="heart-icon"></div>
+                                </button>
+                                <button class="close-icon">
+                                    <p class="btn-close">
+                                        <span title="Удалить из избранного" class="btn-close--icon">&#10006;</span>
+                                    </p>
+                                </button>
+                            </div>
+                            <p class="btn-play">
+                                <span class="btn-play--icon">&#9658;</span>
+                            </p>
+                            <p class="film-img--hover-descr">
+                                <span class="">КП: 7.5</span>
+                                <span class="">IMDb: 7.7</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="film-ratings">
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-like.svg"></object>
+                            <span class="btn-score">25</span>
+                        </button>
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-dislike.svg"></object>
+                            <span class="btn-score">4</span>
+                        </button>
+                    </div>
+                    <div class="film-info">
+                        <h1>13 причин почему</h1>
+                        <p class="film-info__descr">4 сезона, 8 серий</p>
+                    </div>
+                </div>
+                
+                <div class="film">
+                    <div class="film-img poster2">
+                        <div class="film-img--hover">
+                            <div class="film-img--hover--btn-up">
+                                <button class="favorites-icon">
+                                    <div class="heart-icon"></div>
+                                </button>
+                                <button class="close-icon">
+                                    <p class="btn-close">
+                                        <span title="Удалить из избранного" class="btn-close--icon">&#10006;</span>
+                                    </p>
+                                </button>
+                            </div>
+                            <p class="btn-play">
+                                <span class="btn-play--icon">&#9658;</span>
+                            </p>
+                            <p class="film-img--hover-descr">
+                                <span class="">КП: 7.5</span>
+                                <span class="">IMDb: 7.7</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="film-ratings">
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-like.svg"></object>
+                            <span class="btn-score">38</span>
+                        </button>
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-dislike.svg"></object>
+                            <span class="btn-score">5</span>
+                        </button>
+                    </div>
+                    <div class="film-info">
+                        <h1>911 Служба спасения</h1>
+                        <p class="film-info__descr">3 сезона, 18 серий</p>
+                    </div>
+                </div>
+                
+                <div class="film">
+                    <div class="film-img poster3">
+                        <div class="film-img--hover">
+                            <div class="film-img--hover--btn-up">
+                                <button class="favorites-icon">
+                                    <div class="heart-icon"></div>
+                                </button>
+                                <button class="close-icon">
+                                    <p class="btn-close">
+                                        <span title="Удалить из избранного" class="btn-close--icon">&#10006;</span>
+                                    </p>
+                                </button>
+                            </div>
+                            <p class="btn-play">
+                                <span class="btn-play--icon">&#9658;</span>
+                            </p>
+                            <p class="film-img--hover-descr">
+                                <span class="">КП: 7.5</span>
+                                <span class="">IMDb: 7.7</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="film-ratings">
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-like.svg"></object>
+                            <span class="btn-score">9</span>
+                        </button>
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-dislike.svg"></object>
+                            <span class="btn-score">1</span>
+                        </button>
+                    </div>
+                    <div class="film-info">
+                        <h1>Миллион мелочей</h1>
+                        <p class="film-info__descr">2 сезона, 19 серий</p>
+                    </div>
+                </div>
+
+                <div class="film">
+                    <div class="film-img poster4">
+                        <div class="film-img--hover">
+                            <div class="film-img--hover--btn-up">
+                                <button class="favorites-icon">
+                                    <div class="heart-icon"></div>
+                                </button>
+                                <button class="close-icon">
+                                    <p class="btn-close">
+                                        <span title="Удалить из избранного" class="btn-close--icon">&#10006;</span>
+                                    </p>
+                                </button>
+                            </div>
+                            <p class="btn-play">
+                                <span class="btn-play--icon">&#9658;</span>
+                            </p>
+                            <p class="film-img--hover-descr">
+                                <span class="">КП: 7.5</span>
+                                <span class="">IMDb: 7.7</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="film-ratings">
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-like.svg"></object>
+                            <span class="btn-score">25</span>
+                        </button>
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-dislike.svg"></object>
+                            <span class="btn-score">2</span>
+                        </button>
+                    </div>
+                    <div class="film-info">
+                        <h1>Мыслить как преступник</h1>
+                        <p class="film-info__descr">15 сезонов, 10 серий</p>
+                    </div>
+                </div>
+
+                <div class="film">
+                    <div class="film-img poster5">
+                        <div class="film-img--hover">
+                            <div class="film-img--hover--btn-up">
+                                <button class="favorites-icon">
+                                    <div class="heart-icon"></div>
+                                </button>
+                                <button class="close-icon">
+                                    <p class="btn-close">
+                                        <span title="Удалить из избранного" class="btn-close--icon">&#10006;</span>
+                                    </p>
+                                </button>
+                            </div>
+                            <p class="btn-play">
+                                <span class="btn-play--icon">&#9658;</span>
+                            </p>
+                            <p class="film-img--hover-descr">
+                                <span class="">КП: 7.5</span>
+                                <span class="">IMDb: 7.7</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="film-ratings">
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-like.svg"></object>
+                            <span class="btn-score">42</span>
+                        </button>
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-dislike.svg"></object>
+                            <span class="btn-score">1</span>
+                        </button>
+                    </div>
+                    <div class="film-info">
+                        <h1>Американская история ужасов</h1>
+                        <p class="film-info__descr">9 сезонов, 9 серий</p>
+                    </div>
+                </div>
+
+                <div class="film">
+                    <div class="film-img poster6">
+                        <div class="film-img--hover">
+                            <div class="film-img--hover--btn-up">
+                                <button class="favorites-icon">
+                                    <div class="heart-icon"></div>
+                                </button>
+                                <button class="close-icon">
+                                    <p class="btn-close">
+                                        <span title="Удалить из избранного" class="btn-close--icon">&#10006;</span>
+                                    </p>
+                                </button>
+                            </div>
+                            <p class="btn-play">
+                                <span class="btn-play--icon">&#9658;</span>
+                            </p>
+                            <p class="film-img--hover-descr">
+                                <span class="">КП: 7.5</span>
+                                <span class="">IMDb: 7.7</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="film-ratings">
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-like.svg"></object>
+                            <span class="btn-score">100500</span>
+                        </button>
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-dislike.svg"></object>
+                            <span class="btn-score">0</span>
+                        </button>
+                    </div>
+                    <div class="film-info">
+                        <h1>Название</h1>
+                        <p class="film-info__descr">* сезонов, * серий</p>
+                    </div>
+                </div>
+
+                <div class="film">
+                    <div class="film-img poster7">
+                        <div class="film-img--hover">
+                            <div class="film-img--hover--btn-up">
+                                <button class="favorites-icon">
+                                    <div class="heart-icon"></div>
+                                </button>
+                                <button class="close-icon">
+                                    <p class="btn-close">
+                                        <span title="Удалить из избранного" class="btn-close--icon">&#10006;</span>
+                                    </p>
+                                </button>
+                            </div>
+                            <p class="btn-play">
+                                <span class="btn-play--icon">&#9658;</span>
+                            </p>
+                            <p class="film-img--hover-descr">
+                                <span class="">КП: 7.5</span>
+                                <span class="">IMDb: 7.7</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="film-ratings">
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-like.svg"></object>
+                            <span class="btn-score">100500</span>
+                        </button>
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-dislike.svg"></object>
+                            <span class="btn-score">0</span>
+                        </button>
+                    </div>
+                    <div class="film-info">
+                        <h1>Название</h1>
+                        <p class="film-info__descr">* сезонов, * серий</p>
+                    </div>
+                </div>
+
+                <div class="film">
+                    <div class="film-img poster8">
+                        <div class="film-img--hover">
+                            <div class="film-img--hover--btn-up">
+                                <button class="favorites-icon">
+                                    <div class="heart-icon"></div>
+                                </button>
+                                <button class="close-icon">
+                                    <p class="btn-close">
+                                        <span title="Удалить из избранного" class="btn-close--icon">&#10006;</span>
+                                    </p>
+                                </button>
+                            </div>
+                            <p class="btn-play">
+                                <span class="btn-play--icon">&#9658;</span>
+                            </p>
+                            <p class="film-img--hover-descr">
+                                <span class="">КП: 7.5</span>
+                                <span class="">IMDb: 7.7</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="film-ratings">
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-like.svg"></object>
+                            <span class="btn-score">100500</span>
+                        </button>
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-dislike.svg"></object>
+                            <span class="btn-score">0</span>
+                        </button>
+                    </div>
+                    <div class="film-info">
+                        <h1>Название</h1>
+                        <p class="film-info__descr">* сезонов, * серий</p>
+                    </div>
+                </div>
+
+                <div class="film">
+                    <div class="film-img poster9">
+                        <div class="film-img--hover">
+                            <div class="film-img--hover--btn-up">
+                                <button class="favorites-icon">
+                                    <div class="heart-icon"></div>
+                                </button>
+                                <button class="close-icon">
+                                    <p class="btn-close">
+                                        <span title="Удалить из избранного" class="btn-close--icon">&#10006;</span>
+                                    </p>
+                                </button>
+                            </div>
+                            <p class="btn-play">
+                                <span class="btn-play--icon">&#9658;</span>
+                            </p>
+                            <p class="film-img--hover-descr">
+                                <span class="">КП: 7.5</span>
+                                <span class="">IMDb: 7.7</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="film-ratings">
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-like.svg"></object>
+                            <span class="btn-score">100500</span>
+                        </button>
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-dislike.svg"></object>
+                            <span class="btn-score">0</span>
+                        </button>
+                    </div>
+                    <div class="film-info">
+                        <h1>Название</h1>
+                        <p class="film-info__descr">* сезонов, * серий</p>
+                    </div>
+                </div>
+
+                <div class="film">
+                    <div class="film-img poster10">
+                        <div class="film-img--hover">
+                            <div class="film-img--hover--btn-up">
+                                <button class="favorites-icon">
+                                    <div class="heart-icon"></div>
+                                </button>
+                                <button class="close-icon">
+                                    <p class="btn-close">
+                                        <span title="Удалить из избранного" class="btn-close--icon">&#10006;</span>
+                                    </p>
+                                </button>
+                            </div>
+                            <p class="btn-play">
+                                <span class="btn-play--icon">&#9658;</span>
+                            </p>
+                            <p class="film-img--hover-descr">
+                                <span class="">КП: 7.5</span>
+                                <span class="">IMDb: 7.7</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="film-ratings">
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-like.svg"></object>
+                            <span class="btn-score">100500</span>
+                        </button>
+                        <button class="film-ratings__icon">
+                            <object type="image/svg+xml" data="/img/svg/btn-dislike.svg"></object>
+                            <span class="btn-score">0</span>
+                        </button>
+                    </div>
+                    <div class="film-info">
+                        <h1>Название</h1>
+                        <p class="film-info__descr">* сезонов, * серий</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="postponed" class="tabcontent">
+            <h3>Отложенное</h3>
+            <p>Тест</p>
+        </div>
+    </section>
+    
+    <script src="/js/menu.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
