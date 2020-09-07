@@ -140,52 +140,52 @@ img {
 }
 
 .poster1 {
-    background: url('/img/13_Reasons_Why.jpg') no-repeat;
+    background: url('img/13_Reasons_Why.jpg') no-repeat;
     background-size: cover;
 }
 
 .poster2 {
-    background: url('/img/911.jpg') no-repeat;
+    background: url('img/911.jpg') no-repeat;
     background-size: cover;
 }
 
 .poster3 {
-    background: url('/img/A-Million-Little-Things.jpg') no-repeat;
+    background: url('img/A-Million-Little-Things.jpg') no-repeat;
     background-size: cover;
 }
 
 .poster4 {
-    background: url('/img/criminal-minds.jpg') no-repeat;
+    background: url('img/criminal-minds.jpg') no-repeat;
     background-size: cover;
 }
 
 .poster5 {
-    background: url('/img/ahs.jpg') no-repeat;
+    background: url('img/ahs.jpg') no-repeat;
     background-size: cover;
 }
 
 .poster6 {
-    background: url('/img/castle-rock-poster.jpg') no-repeat;
+    background: url('img/castle-rock-poster.jpg') no-repeat;
     background-size: cover;
 }
 
 .poster7 {
-    background: url('/img/barry.jpg') no-repeat;
+    background: url('img/barry.jpg') no-repeat;
     background-size: cover;
 }
 
 .poster8 {
-    background: url('/img/hilda.jpg') no-repeat;
+    background: url('img/hilda.jpg') no-repeat;
     background-size: cover;
 }
 
 .poster9 {
-    background: url('/img/harrypotter.jpg') no-repeat;
+    background: url('img/harrypotter.jpg') no-repeat;
     background-size: cover;
 }
 
 .poster10 {
-    background: url('/img/american-gods.jpg') no-repeat;
+    background: url('img/american-gods.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -205,7 +205,7 @@ img {
 }
 
 .heart-icon {
-    background-image: url(/img/svg/heart.svg);
+    background-image: url(img/svg/heart.svg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 23px;
@@ -213,7 +213,7 @@ img {
 }
 
 .heart-icon:hover {
-    background-image: url(/img/svg/heart-active.svg);
+    background-image: url(img/svg/heart-active.svg);
 }
 
 .close-icon {
